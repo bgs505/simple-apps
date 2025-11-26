@@ -4,11 +4,13 @@ services:
   backend:
     build: ./apps
     restart: always
-    links:
+    enviroment:
       - DB_NAME=training
       - DB_HOST=localhost
       - DB_USER=peserta
       - DB_PASS=password
+    links:
+      - db
     ports:
       - "3000"
     volumes:
