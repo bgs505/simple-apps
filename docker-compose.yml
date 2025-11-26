@@ -4,7 +4,7 @@ services:
   backend:
     build: ./apps
     restart: always
-    enviroment:
+    environment:
       - DB_NAME=training
       - DB_HOST=localhost
       - DB_USER=peserta
