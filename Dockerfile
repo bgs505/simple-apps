@@ -1,4 +1,4 @@
-FROM node:v18.20.8-alphine
+FROM node:v18.20.8-alpine
 WORKDIR /app
 ENV APP_PORT=3000
 ADD . .
