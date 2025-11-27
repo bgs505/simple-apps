@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label "training"}
     
     tools {nodejs "nodejs 18.20.8"}
 
