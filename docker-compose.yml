@@ -6,9 +6,10 @@ services:
     restart: always
     environment:
       - DB_NAME=training
-      - DB_HOST=localhost
+      - DB_HOST=db
       - DB_USER=peserta
       - DB_PASS=password
+      - DB_PORT=3306
     links:
       - db
     ports:
