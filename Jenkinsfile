@@ -1,12 +1,12 @@
 pipeline {
     agent any
     
-    tools {nodejs "nodejs 18.16.0"}
+    tools {nodejs "nodejs 18.20.8"}
 
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch: 'dev', url: 'https://github.com/IDN-Training/simple-apps.git'
+                git branch: 'main', url: 'https://github.com/bgs505/simple-apps.git'
             }
         }
         stage('Build') {
