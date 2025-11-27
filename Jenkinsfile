@@ -25,6 +25,7 @@ pipeline {
                 sh '''sonar \
                 -Dsonar.host.url=http://172.23.12.116:9000 \
                 -Dsonar.token=sqp_13bacf07f7d047b2ff71e4ca98ffc906ae24e604 \
+                -Dsonar.sources=. \
                 -Dsonar.projectKey=simple-apps-116'''
             }
         }
